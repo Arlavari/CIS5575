@@ -12,7 +12,7 @@ Github and Cloud9 setup using Personal Access Token:
 4. Click "Generate token", copy and paste the token in a temporary place
 5. Create a new cloud9 environment
 6. Delete the README.md file
-7. git config --global credential.helper store
+7. >git config --global credential.helper store
 7. Go to Github and copy the repository URL
 8. Go to Cloud9 terminal and clone the repository
   a. Type: git clone + repository URL
@@ -86,10 +86,10 @@ ssh-keygen -t rsa
   b. Enter a line of code
   c. Run the file
 19. While keeping the current terminal window for project,  open a new terminal for git to manage the source code) 
-20. git add --all
-21. git status
-22. git commit -m "first python code"
-23. git push
+20. >git add --all
+21. >git status
+22. >git commit -m "first python code"
+23. >git push
   a. github username:
   b. password: copy and paste the account access token
 
@@ -98,7 +98,7 @@ ssh-keygen -t rsa
 
 -----------------------------------------------------------------
 
-Basic Flask Code
+<code>Basic Flask Code
 
 from flask import Flask
 app = Flask(__name__)
@@ -106,4 +106,4 @@ app = Flask(__name__)
 def hello_world():
    return 'Hello World'
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug = True)
+    app.run(host='0.0.0.0', port=8080, debug = True)</code>
